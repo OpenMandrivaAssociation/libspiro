@@ -29,6 +29,7 @@ be used in the myriad of ways the world has come to use béziers.
 Summary:	Development files for %{name}
 Group:		Development/C
 Requires:	%{libname} = %{EVRD}
+Provides:	spiro-devel = %{EVRD}
 
 %description -n	%{devname}
 This package contains libraries and header files for developing applications
