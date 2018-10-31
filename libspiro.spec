@@ -4,7 +4,7 @@
 
 Name:		libspiro
 Version:	0.2.20130930
-Release:	6
+Release:	7
 Summary:	Library to simplify the drawing of beautiful curves
 Group:		System/Libraries
 License:	GPLv2+
