@@ -53,3 +53,4 @@ autoreconf -fi
 %files -n %{devname}
 %{_includedir}/*
 %{_libdir}/libspiro.so
+%{_libdir}/pkgconfig/libspiro.pc
