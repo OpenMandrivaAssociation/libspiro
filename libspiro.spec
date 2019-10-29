@@ -1,15 +1,15 @@
-%define	major	0
+%define	major	1
 %define	libname	%mklibname spiro %{major}
 %define	devname	%mklibname -d spiro
 
 Name:		libspiro
-Version:	0.2.20130930
-Release:	7
+Version:	20190731
+Release:	1
 Summary:	Library to simplify the drawing of beautiful curves
 Group:		System/Libraries
 License:	GPLv2+
 URL:		http://libspiro.sourceforge.net/
-Source0:	%{name}-%{version}.tar.xz
+Source0:	https://github.com/fontforge/libspiro/releases/download/%{version}/libspiro-%{version}.tar.gz
 
 %description
 This library will take an array of spiro control points and 
@@ -36,15 +36,15 @@ This package contains libraries and header files for developing applications
 that use %{name}.
 
 %prep
-%setup -q
+%autosetup -n libspiro-%{version}
 autoreconf -fi
 
 %build
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %doc README* ChangeLog AUTHORS
