@@ -3,13 +3,13 @@
 %define	devname	%mklibname -d spiro
 
 Name:		libspiro
-Version:	20190731
+Version:	20200505
 Release:	1
 Summary:	Library to simplify the drawing of beautiful curves
 Group:		System/Libraries
 License:	GPLv2+
 URL:		http://libspiro.sourceforge.net/
-Source0:	https://github.com/fontforge/libspiro/releases/download/%{version}/libspiro-%{version}.tar.gz
+Source0:	https://github.com/fontforge/libspiro/releases/download/%{version}/libspiro-dist-%{version}.tar.gz
 
 %description
 This library will take an array of spiro control points and 
@@ -54,3 +54,4 @@ autoreconf -fi
 %{_includedir}/*
 %{_libdir}/libspiro.so
 %{_libdir}/pkgconfig/libspiro.pc
+%{_mandir}/man3/libspiro.3*
