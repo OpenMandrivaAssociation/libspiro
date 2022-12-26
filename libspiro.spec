@@ -3,7 +3,7 @@
 %define	devname	%mklibname -d spiro
 
 Name:		libspiro
-Version:	20220722
+Version:	20221101
 Release:	1
 Summary:	Library to simplify the drawing of beautiful curves
 Group:		System/Libraries
