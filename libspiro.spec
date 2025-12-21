@@ -11,6 +11,11 @@ License:	GPLv2+
 URL:		https://libspiro.sourceforge.net/
 Source0:	https://github.com/fontforge/libspiro/releases/download/%{version}/libspiro-dist-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 This library will take an array of spiro control points and 
 convert them into a series of bézier splines which can then 
